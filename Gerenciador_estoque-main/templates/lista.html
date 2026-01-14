@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>StockFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='android-chrome-192x192.png') }}">
+</head>
+<body class="bg-light">
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">{{ titulo }}</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered align-middle">
+                <thead class="table-success">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Categoria</th>
+                        <th>Marca</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for produto in todos_produtos %}
+                    <tr>
+                        <td>{{ produto.nm_produto }}</td>
+                        <td>{{ produto.qtd_produto }}</td>
+                        <td>{{ produto.ds_categoria }}</td>
+                        <td>{{ produto.ds_marca }}</td>
+                        <td>R${{ produto.vl_produto }}</td>
+                        <td>
+                            <a class="btn btn-danger btn-sm" href="{{ url_for('excluir_produto', id=produto.id) }}" onclick="return confirm('Tem certeza que deseja excluir este produto?');">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M10 2 L9 3 L4 3 L4 5 L5 5 L5 20 C5 20.522 5.191 21.055 5.569 21.432 C5.945 21.809 6.478 22 7 22 L17 22 C17.522 22 18.055 21.809 18.432 21.432 C18.809 21.055 19 20.522 19 20 L19 5 L20 5 L20 3 L15 3 L14 2 L10 2 Z M7 5 L17 5 L17 20 L7 20 L7 5 Z M9 7 L9 18 L11 18 L11 7 L9 7 Z M13 7 L13 18 L15 18 L15 7 L13 7 Z"/>
+                        </svg>
+
+                        Excluir
+                        </a>
+                    </td>   
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="{{ url_for('adicionar_produto') }}" class="btn btn-success btn-lg">Voltar</a>
+        </div>
+    </div>
+</body>
+</html>

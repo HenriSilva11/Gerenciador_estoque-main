@@ -10,11 +10,11 @@
         <div class="card shadow p-4">
             <form action="{{ url_for('adicionar_produto') }}" method="POST">
                 <div class="mb-3">
-                    <label for="txtNome" class="form-label">Nome da tarefa</label>
+                    <label for="txtNome" class="form-label">Nome do Produto</label>
                     <input type="text" name="txtNome" id="txtNome" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <label for="txtQuantidade" class="form-label">Quantidade de vezes ao dia</label>
+                    <label for="txtQuantidade" class="form-label">Quantidade</label>
                     <input type="number" name="txtQuantidade" id="txtQuantidade" class="form-control" required>
                 </div>
                 <div class="mb-3">
@@ -22,9 +22,14 @@
                     <input type="text" name="txtCategoria" id="txtCategoria" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <label for="txtMarca" class="form-label">Horario</label>
+                    <label for="txtMarca" class="form-label">Marca</label>
                     <input type="text" name="txtMarca" id="txtMarca" class="form-control" required>
                 </div>
+                <div class="mb-3">
+                    <label for="txtValor" class="form-label">Valor</label>
+                    <input type="text" name="txtValor" id="txtValor" class="form-control" placeholder="Ex: 99.99" required>
+                </div>
+
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-success">Adicionar Produto</button>
                 </div>

@@ -1,6 +1,17 @@
 {% extends "base.html" %}
 {% block conteudo %}
 
+<script>
+function mascaraValor(campo) {
+  let valor = campo.value;
+
+  valor = valor.replace(/\D/g, '');
+
+  valor = valor.replace(/(\d+)(\d{2})$/, '$1,$2');
+
+  campo.value = valor;
+}</script>
+
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h2>Cadastrar Produto</h2>
 </div>
@@ -27,7 +38,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="txtValor" class="form-label">Valor</label>
-                    <input type="text" name="txtValor" id="txtValor" class="form-control" placeholder="Ex: 99.99" required>
+                    <input type="text" name="txtValor"  id="txtValor" class="form-control" placeholder="Ex: 99.99" required oninput="mascaraValor(this)>
                 </div>
 
                 <div class="d-grid gap-2">

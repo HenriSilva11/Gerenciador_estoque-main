@@ -64,3 +64,16 @@ Usuário comum: possui acesso às funcionalidades básicas do sistema.
 CONSIDERAÇÕES FINAIS
 O projeto StockFlow tem como objetivo consolidar os conhecimentos teóricos e práticos adquiridos ao longo do curso,
 aplicando conceitos de desenvolvimento web, segurança da informação e engenharia de software.
+
+MUDANÇA DE ESCOPO DO PROJETO
+
+Durante o desenvolvimento do projeto, foi identificada a necessidade de ajustes no escopo inicialmente definido.
+O escopo inicial previa apenas funcionalidades básicas de gerenciamento de produtos e autenticação simples
+de usuários.
+
+No decorrer do projeto, observou-se a importância de reforçar os aspectos de segurança da aplicação, o que
+resultou na inclusão de novas funcionalidades, como o controle de acesso por perfil de usuário (administrador
+e usuário comum) e a criptografia das credenciais dos usuários por meio de algoritmos de hash.
+
+Essas alterações foram realizadas para atender às boas práticas da engenharia de software e segurança da
+informação, sem comprometer os objetivos acadêmicos do projeto.

@@ -121,7 +121,7 @@ def lista_produtos():
     return render_template('lista.html', titulo="Lista de Produtos", todos_produtos=lista)
 
 @app.route('/excluir/<int:id>')
-@login_required
+@login_required 
 def excluir_produto(id):
     if current_user.role != "admin":
         flash("Acesso negado! Apenas administradores podem excluir produtos.", "danger")

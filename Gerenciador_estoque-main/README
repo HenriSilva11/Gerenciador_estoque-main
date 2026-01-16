@@ -1,0 +1,66 @@
+STOCKFLOW – SISTEMA DE GERENCIAMENTO DE ESTOQUE
+
+DESCRIÇÃO DO PROJETO
+O StockFlow é um sistema web para gerenciamento de estoque desenvolvido em Python utilizando o framework Flask.
+O sistema permite o controle de produtos, incluindo cadastro, listagem e exclusão, além de autenticação de usuários
+e controle de acesso por perfil. O projeto possui finalidade acadêmica, aplicando conceitos de engenharia de software.
+
+OBJETIVOS
+- Gerenciar produtos em estoque de forma organizada
+- Implementar autenticação e autorização de usuários
+- Aplicar boas práticas de segurança
+- Desenvolver uma aplicação web estruturada e responsiva
+- Utilizar versionamento de código por meio do GitHub
+
+FUNCIONALIDADES
+- Cadastro de usuários
+- Login e logout de usuários
+- Criptografia de senhas com hash
+- Controle de acesso por perfil (administrador e usuário comum)
+- Cadastro de produtos
+- Listagem de produtos
+- Exclusão de produtos (restrita ao administrador)
+- Validação de dados de entrada
+- Interface web responsiva com Bootstrap
+
+SEGURANÇA
+O sistema implementa mecanismos básicos de segurança, como armazenamento seguro de senhas por meio de hash
+criptográfico, controle de acesso baseado em perfil, proteção de rotas com autenticação obrigatória e encerramento
+seguro da sessão do usuário.
+
+TECNOLOGIAS UTILIZADAS
+- Python 3
+- Flask
+- Flask-SQLAlchemy
+- Flask-Login
+- MySQL
+- HTML5
+- CSS3 / Bootstrap
+- Jinja2
+- Werkzeug
+
+MODELAGEM DO SISTEMA
+O projeto utiliza modelagem UML para documentar e compreender sua estrutura e funcionamento, incluindo
+Diagrama de Casos de Uso e Diagrama de Classes.
+
+METODOLOGIA DE DESENVOLVIMENTO
+O desenvolvimento do projeto seguiu uma abordagem ágil híbrida, utilizando práticas de Kanban e Scrum.
+As tarefas foram organizadas em um quadro Kanban no GitHub Projects.
+
+TESTES
+Foram utilizados testes automatizados para validar o funcionamento das rotas principais, autenticação de usuários
+e controle de permissões, contribuindo para a qualidade e confiabilidade do sistema.
+
+EXECUÇÃO DO PROJETO
+1. Criar ambiente virtual
+2. Ativar o ambiente virtual
+3. Instalar as dependências do projeto
+4. Executar a aplicação utilizando Python
+
+PERFIS DE USUÁRIO
+Administrador: possui acesso completo ao sistema, incluindo exclusão de produtos.
+Usuário comum: possui acesso às funcionalidades básicas do sistema.
+
+CONSIDERAÇÕES FINAIS
+O projeto StockFlow tem como objetivo consolidar os conhecimentos teóricos e práticos adquiridos ao longo do curso,
+aplicando conceitos de desenvolvimento web, segurança da informação e engenharia de software.
